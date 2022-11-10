@@ -11,10 +11,10 @@ class UserSerializer(serializers.ModelSerializer):
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ('id', 'title', 'author', 'publication_date', 'featured')
+        fields = ('id', 'title', 'author', 'publication_date', 'featured',)
 
 
 class ReadingStatusSerializer(serializers.ModelSerializer):
     class meta:
         model = ReadingStatus
-        fields = ('id', 'status', 'user', 'book')
+        fields = ('id', 'status', 'user', 'book',)
