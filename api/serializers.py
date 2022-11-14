@@ -18,3 +18,9 @@ class ReadingStatusSerializer(serializers.ModelSerializer):
     class meta:
         model = ReadingStatus
         fields = ('id', 'status', 'user', 'book',)
+
+
+class FeaturedSerializer(serializers.ModelSerializer):
+    class meta:
+        model = Book
+        fields = ('title', 'author')
